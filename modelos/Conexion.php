@@ -11,13 +11,13 @@ abstract class Conexion{
         echo "Error de Conexion de BD"; 
         echo "<br>"; 
         echo "Error: ".$e->getMessage();
-
-
-
-
-
-
-
+        exit; 
     }
-    
+    return self::$conexion; 
 }
+public static function ejecutar($sql){
+     self::conectar();
+     $sentencia = self::$conexion->prepare($sql);
+     $resultado = $sentencia->execute();
+     
+     return $resultado;

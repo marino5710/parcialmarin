@@ -8,9 +8,11 @@
     <title>REGISTRO DE INSUMOS</title>
 </head>
 <body>
-    
+<header class="bg-dark text-white text-center p-4">
+    <h1 class="display-4">Comando de Informática y Tecnología</h1>
+  </header>
     <div class="container bg-light">
-        <h1 class="text center">FORMULARIO DE INSUMOS ADQUIRIDOS</h1>
+        <h1 class="text-center">FORMULARIO DE INSUMOS ADQUIRIDOS</h1>
         <div class="row justify-content-center">
             <form action="/parcialmarin/controladores/insumos/guardar.php" method="POST" class="col-lg-8 border bg-light p-3">
                 <div class="row mb-3">
@@ -51,6 +53,8 @@
             </form>
         </div>
     </div>
-    
+    <footer class="bg-dark text-white text-center p-2">
+    <p> Comando de Informática y Tecnología.</p>
+  </footer>
 </body>
 </html>

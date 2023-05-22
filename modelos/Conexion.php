@@ -14,12 +14,20 @@ abstract class Conexion{
         exit; 
     }
     return self::$conexion; 
+    }
+    public static function ejecutar($sql){
+        self::conectar();
+        $sentencia = self::$conexion->prepare($sql);
+        $resultado = $sentencia->execute();
+        self::$conexion = null; 
+        return $resultado;
+    }
+    public static function servir ($sql){
+        self::conectar();
+        $sentencia = self::$conexion->prepare($sql);
+        $sentencia->execute();
+        $resultado = $sentencia->fetchAll(PDO::FETCH_ASSOC);
+        self::$conexion = null;
+        return $resultado;
+    }
 }
-public static function ejecutar($sql){
-     self::conectar();
-     $sentencia = self::$conexion->prepare($sql);
-     $resultado = $sentencia->execute();
-     self::$conexion = null; 
-     return $resultado;
-}
-public static function servir ($sql){

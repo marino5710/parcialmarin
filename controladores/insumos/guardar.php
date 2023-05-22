@@ -23,7 +23,26 @@ try {
     <title>RESULTADOS</title>
 </head>
 <body>
-    
-    
+<div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <?php if($resultado): ?>
+                    <div class="alert alert-success" role="alert">
+                        Guardado exitosamente!
+                    </div>
+                <?php else :?>
+                    <div class="alert alert-danger" role="alert">
+                        Ocurrió un error: <?= $error ?>
+                    </div>
+                <?php endif ?>
+              
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4">
+                <a href="/PRACTICA7/vistas/productos/index.php" class="btn btn-info">Volver al formulario</a>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

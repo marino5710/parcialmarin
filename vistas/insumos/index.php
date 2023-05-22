@@ -8,5 +8,14 @@
 </head>
 <body>
     
+    <div class="container bg-light">
+        <h1 class="text center">FORMULARIO DE INSUMOS ADQUIRIDOS</h1>
+        <div class="row justify-content-center">
+
+
+
+        </div>
+    </div>
+    
 </body>
 </html>

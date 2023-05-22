@@ -26,6 +26,12 @@
                 </div>
                 <div class="row mb-3">
                     <div class="col">
+                        <label for="insum_marca">Precio del insumo</label>
+                        <input type="text" name="insum_marca" id="insum_marca" class="form-control" placeholder="INGRESE LA MARCA DEL PRODUCTO EJ; SULI">
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col">
                         <label for="insum_precio">Precio del insumo</label>
                         <input type="text" name="insum_precio" id="insum_precio" class="form-control" placeholder="INGRESE UN PRECIO, EJ; 5">
                     </div>

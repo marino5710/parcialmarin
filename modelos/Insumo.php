@@ -17,5 +17,10 @@ class Insumos extends Conexion {
         $this->insum_proveedor = $args['insum_proveedor'] ?? '';
         $this->insum_precio = $args['insum_nombre'] ?? '';
     }
+    public function guardar(){
+        $sql = "INSERT INTO insumos(insum_nombre, insum_cantidad, insum_marca, insum_proveedor, insum_precio) VALUES ('$this->insum_nombre', '$this->insum_cantidad', '$this->insum_marca','$this->insum_proveedor', '$this->insum_precio')";
+        $resultado = self::ejecutar($sql); 
+        return $resultado;
+    }
 
 }

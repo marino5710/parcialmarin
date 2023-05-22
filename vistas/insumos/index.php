@@ -15,12 +15,20 @@
                 <div class="row mb-3">
                     <div class="col">
                         <label for="insum_nombre">Nombre del insumo</label>
-                        <input type="text" name="alumno_nombre" id="alumno_nombre" class="form-control" placeholder="INGRESE UN NOMBRE, EJ; BRIAN">
+                        <input type="text" name="insum_nombre" id="insum_nombre" class="form-control" placeholder="Ingrese el nombre del Insumo, Ej: Aceite">
                     </div>
                 </div>
+                <div class="row mb-3">
+                    <div class="col">
+                        <label for="insum_cantidad">Cantidad del insumo</label>
+                        <input type="text" name="insum_cantidad" id="insum_cantidad" class="form-control" placeholder="INGRESE UNA CANTIDAD, EJ; 5">
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    
 
 
-
+        </form>
         </div>
     </div>
     

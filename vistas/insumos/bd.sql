@@ -4,5 +4,5 @@ CREATE TABLE insumos (
     insum_cantidad INT,
     insum_marca VARCHAR (75),
     insum_proveedor VARCHAR (75), 
-    insum_precio DECIMAL (10,2)
+    insum_precio FLOAT
 ); 

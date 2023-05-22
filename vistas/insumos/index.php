@@ -11,6 +11,13 @@
     <div class="container bg-light">
         <h1 class="text center">FORMULARIO DE INSUMOS ADQUIRIDOS</h1>
         <div class="row justify-content-center">
+        <form action="/parcialmarin/controladores/insumos/guardar.php" method="POST" class="col-lg-8 border bg-light p-3">
+                <div class="row mb-3">
+                    <div class="col">
+                        <label for="insum_nombre">Nombre del insumo</label>
+                        <input type="text" name="alumno_nombre" id="alumno_nombre" class="form-control" placeholder="INGRESE UN NOMBRE, EJ; BRIAN">
+                    </div>
+                </div>
 
 
 

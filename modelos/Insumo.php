@@ -8,4 +8,12 @@ class Insumos extends Conexion {
     public $insum_proveedor;
     public $insum_precio;
 
+    public function __construct($args = [] )
+    {
+        
+
+
+        # code...
+    }
+
 }

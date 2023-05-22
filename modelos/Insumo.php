@@ -14,12 +14,8 @@ class Insumos extends Conexion {
         $this->insum_nombre = $args['insum_nombre'] ?? '';
         $this->insum_cantidad = $args['insum_cantidad'] ?? '';
         $this->insum_marca = $args['insum_marca'] ?? '';
-
-
-
-
-
-        # code...
+        $this->insum_proveedor = $args['insum_proveedor'] ?? '';
+        $this->insum_precio = $args['insum_nombre'] ?? '';
     }
 
 }

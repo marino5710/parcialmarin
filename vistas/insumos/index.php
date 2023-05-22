@@ -25,7 +25,12 @@
                     </div>
                 </div>
                 <div class="row mb-3">
-                    
+                    <div class="col">
+                        <label for="insum_precio">Precio del insumo</label>
+                        <input type="text" name="insum_precio" id="insum_precio" class="form-control" placeholder="INGRESE UN PRECIO, EJ; 5">
+                    </div>
+                </div>
+
 
 
         </form>

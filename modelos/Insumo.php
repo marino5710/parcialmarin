@@ -10,7 +10,13 @@ class Insumos extends Conexion {
 
     public function __construct($args = [] )
     {
-        
+        $this->insum_id = $args['id'] ?? null;
+        $this->insum_nombre = $args['insum_nombre'] ?? '';
+        $this->insum_cantidad = $args['insum_cantidad'] ?? '';
+        $this->insum_marca = $args['insum_marca'] ?? '';
+
+
+
 
 
         # code...
